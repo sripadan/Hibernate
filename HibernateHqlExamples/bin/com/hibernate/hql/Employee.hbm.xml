@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+	
+<hibernate-mapping package="com.hibernate.hql">
+	<class name="Employee" table="Employee">
+		<id name="empno" column="empno">
+			<generator class="assigned"></generator>
+		</id>
+		<property name="ename"></property>
+		<property name="deptno" type="integer"></property>
+		<property name="sal"></property>
+	</class>
+</hibernate-mapping>
